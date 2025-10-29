@@ -1,0 +1,89 @@
+
+{
+  "header": {
+    "home": "Home",
+    "oom": "OoM",
+    "tips": "Voorspellingen",
+    "login": "Inloggen",
+    "profile": "Profiel"
+  },
+  "footer": {
+    "madeWith": "Gemaakt met",
+    "by": "door de community"
+  },
+  "home": {
+    "heroTitle": "Welkom bij Dartgrid",
+    "heroSubtitle": "De ultieme plek voor live darts scores, statistieken en voorspellingen van de community. Mis nooit een triple twintig.",
+    "openLiveView": "Open Live View",
+    "openOom": "Bekijk OoM",
+    "noLiveMatch": "Geen Live Wedstrijd Momenteel",
+    "checkBackLater": "Kom later terug voor live scores.",
+    "makeYourPick": "Doe je Voorspelling",
+    "oomTitle": "Order of Merit",
+    "viewFullOom": "Bekijk Volledige Ranglijst"
+  },
+  "liveTicker": {
+    "live": "Live",
+    "sets": "Sets",
+    "legs": "Legs",
+    "moreDetails": "Meer Details",
+    "legHistory": "Leg Geschiedenis",
+    "noEvents": "Nog geen gebeurtenissen."
+  },
+  "pickemForm": {
+    "winner": "Winnaar",
+    "score": "Score",
+    "submitTip": "Voorspelling Insturen",
+    "updateTip": "Voorspelling Bijwerken",
+    "loginToPredict": "Log in om te Voorspellen",
+    "picksLocked": "Voorspellingen zijn gesloten",
+    "success": "Voorspelling ingediend!",
+    "error": "Indienen mislukt. Probeer het opnieuw."
+  },
+  "oomPage": {
+    "title": "Order of Merit",
+    "description": "De top 200 spelers ter wereld, gebaseerd op prijzengeld.",
+    "searchPlaceholder": "Zoek een speler...",
+    "rank": "Rang",
+    "player": "Speler",
+    "prizeMoney": "Prijzengeld",
+    "trend": "Trend"
+  },
+  "playerPage": {
+    "quickFacts": "Snelle Feiten",
+    "handedness": "Handigheid",
+    "hometown": "Woonplaats",
+    "birthDate": "Geboortedatum",
+    "walkOnSong": "Walk-On Song",
+    "compareButton": "Vergelijk Speler",
+    "bioHighlights": "Bio & Hoogtepunten",
+    "lastResults": "Laatste Resultaten",
+    "equipment": "Materiaal"
+  },
+  "comparePage": {
+    "title": "Head-to-Head",
+    "record": "Balans",
+    "totalLegs": "Totaal Legs",
+    "lastMeetings": "Laatste 6 Ontmoetingen"
+  },
+  "profilePage": {
+    "title": "Mijn Profiel",
+    "displayName": "Weergavenaam",
+    "country": "Land",
+    "updateProfile": "Profiel Bijwerken",
+    "signOut": "Uitloggen",
+    "success": "Profiel succesvol bijgewerkt!",
+    "error": "Profiel bijwerken mislukt."
+  },
+  "tipsPage": {
+    "title": "Mijn Voorspellingen",
+    "myTips": "Mijn Voorspellingen",
+    "myGroups": "Mijn Groepen",
+    "noTips": "Je hebt nog geen voorspellingen gedaan.",
+    "noGroups": "Je bent geen lid van een groep.",
+    "createGroup": "Groep Maken",
+    "joinGroup": "Deelnemen aan Groep",
+    "groupName": "Groepsnaam",
+    "joinCode": "Deelnamecode"
+  }
+}

@@ -1,0 +1,89 @@
+
+{
+  "header": {
+    "home": "Home",
+    "oom": "OoM",
+    "tips": "Predictions",
+    "login": "Login",
+    "profile": "Profile"
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "by": "by the community"
+  },
+  "home": {
+    "heroTitle": "Welcome to Dartgrid",
+    "heroSubtitle": "The ultimate destination for live darts scores, stats, and community predictions. Never miss a treble twenty.",
+    "openLiveView": "Open Live View",
+    "openOom": "View OoM",
+    "noLiveMatch": "No Live Match Currently",
+    "checkBackLater": "Check back later for live scores.",
+    "makeYourPick": "Make Your Prediction",
+    "oomTitle": "Order of Merit",
+    "viewFullOom": "View Full Rankings"
+  },
+  "liveTicker": {
+    "live": "Live",
+    "sets": "Sets",
+    "legs": "Legs",
+    "moreDetails": "More Details",
+    "legHistory": "Leg History",
+    "noEvents": "No events to show yet."
+  },
+  "pickemForm": {
+    "winner": "Winner",
+    "score": "Score",
+    "submitTip": "Submit Prediction",
+    "updateTip": "Update Prediction",
+    "loginToPredict": "Login to Predict",
+    "picksLocked": "Picks are locked",
+    "success": "Prediction submitted!",
+    "error": "Failed to submit. Please try again."
+  },
+  "oomPage": {
+    "title": "Order of Merit",
+    "description": "The top 200 players in the world, based on prize money.",
+    "searchPlaceholder": "Search for a player...",
+    "rank": "Rank",
+    "player": "Player",
+    "prizeMoney": "Prize Money",
+    "trend": "Trend"
+  },
+  "playerPage": {
+    "quickFacts": "Quick Facts",
+    "handedness": "Handedness",
+    "hometown": "Hometown",
+    "birthDate": "Date of Birth",
+    "walkOnSong": "Walk-On Song",
+    "compareButton": "Compare Player",
+    "bioHighlights": "Bio & Highlights",
+    "lastResults": "Last Results",
+    "equipment": "Equipment"
+  },
+  "comparePage": {
+    "title": "Head-to-Head",
+    "record": "Record",
+    "totalLegs": "Total Legs",
+    "lastMeetings": "Last 6 Meetings"
+  },
+  "profilePage": {
+    "title": "My Profile",
+    "displayName": "Display Name",
+    "country": "Country",
+    "updateProfile": "Update Profile",
+    "signOut": "Sign Out",
+    "success": "Profile updated successfully!",
+    "error": "Failed to update profile."
+  },
+  "tipsPage": {
+    "title": "My Predictions",
+    "myTips": "My Tips",
+    "myGroups": "My Groups",
+    "noTips": "You haven't made any predictions yet.",
+    "noGroups": "You are not a member of any groups.",
+    "createGroup": "Create Group",
+    "joinGroup": "Join Group",
+    "groupName": "Group Name",
+    "joinCode": "Join Code"
+  }
+}

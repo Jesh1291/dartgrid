@@ -1,0 +1,89 @@
+
+{
+  "header": {
+    "home": "Home",
+    "oom": "OoM",
+    "tips": "Tippspiel",
+    "login": "Login",
+    "profile": "Profil"
+  },
+  "footer": {
+    "madeWith": "Gmacht mit",
+    "by": "vo de Community"
+  },
+  "home": {
+    "heroTitle": "Willkomme bi Dartgrid",
+    "heroSubtitle": "D'Plattform für Live-Darts-Resultat, Statistike und Community-Tipps. Verpass kein Treble zwänzg.",
+    "openLiveView": "Live-Ansicht öffne",
+    "openOom": "OoM azeige",
+    "noLiveMatch": "Im Momänt kei Live-Match",
+    "checkBackLater": "Lueg spöter wieder ine für Live-Resultat.",
+    "makeYourPick": "Gib din Tipp ab",
+    "oomTitle": "Order of Merit",
+    "viewFullOom": "Gsamti Rangliste azeige"
+  },
+  "liveTicker": {
+    "live": "Live",
+    "sets": "Sätz",
+    "legs": "Legs",
+    "moreDetails": "Mehr Details",
+    "legHistory": "Leg-Verlauf",
+    "noEvents": "No kei Events zum zeige."
+  },
+  "pickemForm": {
+    "winner": "Gwünner",
+    "score": "Resultat",
+    "submitTip": "Tipp abgäh",
+    "updateTip": "Tipp aktualisiere",
+    "loginToPredict": "Fürs Tippe alogge",
+    "picksLocked": "Tipps sind gschlosse",
+    "success": "Tipp erfolgriich abgäh!",
+    "error": "Fehler bim Sende. Bitte nomal probiere."
+  },
+  "oomPage": {
+    "title": "Order of Merit",
+    "description": "Di Top 200 Spieler vo de Wält, basierend uf em Priisgäld.",
+    "searchPlaceholder": "Suech en Spieler...",
+    "rank": "Rang",
+    "player": "Spieler",
+    "prizeMoney": "Priisgäld",
+    "trend": "Trend"
+  },
+  "playerPage": {
+    "quickFacts": "Fakte",
+    "handedness": "Händigkeit",
+    "hometown": "Heimatort",
+    "birthDate": "Geburtsdatum",
+    "walkOnSong": "Walk-On Song",
+    "compareButton": "Spieler vergliiche",
+    "bioHighlights": "Bio & Highlights",
+    "lastResults": "Letschti Resultat",
+    "equipment": "Uusrüstig"
+  },
+  "comparePage": {
+    "title": "Head-to-Head",
+    "record": "Bilanz",
+    "totalLegs": "Legs Gsamt",
+    "lastMeetings": "Letschti 6 Begegnige"
+  },
+  "profilePage": {
+    "title": "Mis Profil",
+    "displayName": "Azeig-Name",
+    "country": "Land",
+    "updateProfile": "Profil aktualisiere",
+    "signOut": "Abmälde",
+    "success": "Profil erfolgriich gspeicheret!",
+    "error": "Profil spichere fählgschlage."
+  },
+  "tipsPage": {
+    "title": "Mini Tipps",
+    "myTips": "Mini Tipps",
+    "myGroups": "Mini Gruppe",
+    "noTips": "Du hesch no kei Tipps abgäh.",
+    "noGroups": "Du bisch in keinere Gruppe.",
+    "createGroup": "Gruppe erstelle",
+    "joinGroup": "Gruppe biiträte",
+    "groupName": "Gruppename",
+    "joinCode": "Biitritts-Code"
+  }
+}

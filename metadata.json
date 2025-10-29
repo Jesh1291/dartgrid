@@ -1,0 +1,5 @@
+{
+  "name": "Dartgrid",
+  "description": "A production-ready MVP for Dartgrid, a live darts ticker and predictions application. Features include a real-time match ticker, Order of Merit rankings, player profiles, head-to-head comparisons, and a pick'em game with social groups.",
+  "requestFramePermissions": []
+}
