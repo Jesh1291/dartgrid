@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect, useMemo } from 'react';
@@ -77,14 +76,17 @@ export function LiveTicker({ initialMatch, translations }: LiveTickerProps) {
       </div>
 
       <div className="mt-6">
-        {/* FIX: Explicitly pass children to CollapsibleSection to resolve incorrect 'children' is missing error. */}
-        <CollapsibleSection title={translations.moreDetails}>
+        {/* FIX: The `CollapsibleSection` component was incorrectly reporting that the `children` prop was missing. Explicitly passing `children` as a prop resolves this typing issue. */}
+        <CollapsibleSection
+          title={translations.moreDetails}
+          children={
             <div className="bg-background/50 p-4 rounded-md">
-                <h4 className="font-bold text-lg mb-2">{translations.legHistory}</h4>
-                <p className="text-sm text-foreground/70">{translations.noEvents}</p>
-                 {/* NOTE: Full leg history would be rendered here */}
+              <h4 className="font-bold text-lg mb-2">{translations.legHistory}</h4>
+              <p className="text-sm text-foreground/70">{translations.noEvents}</p>
+              {/* NOTE: Full leg history would be rendered here */}
             </div>
-        </CollapsibleSection>
+          }
+        />
       </div>
     </div>
   );

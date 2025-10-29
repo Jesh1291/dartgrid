@@ -15,8 +15,13 @@ export async function updateProfile(formData: FormData) {
     return { error: 'You must be logged in to update your profile.' }
   }
 
-  const displayName = formData.get('displayName') as string
-  const countryCode = formData.get('countryCode') as string
+  const displayName = formData.get('displayName')
+  const countryCode = formData.get('countryCode')
+
+  // Type guard to ensure values are not File objects
+  if (displayName instanceof File || countryCode instanceof File) {
+    return { error: 'Invalid form data. File uploads are not supported for these fields.' }
+  }
   
   const { error } = await supabase.from('profiles').update({
     display_name: displayName,
