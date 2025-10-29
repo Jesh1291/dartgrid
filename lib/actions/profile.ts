@@ -4,6 +4,7 @@ import { createServerClient } from '@/lib/supabase'
 import { revalidatePath } from 'next/cache'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
+import { TablesUpdate } from '@/types/supabase'
 
 export async function updateProfile(formData: FormData) {
   const cookieStore = await cookies()
@@ -21,10 +22,9 @@ export async function updateProfile(formData: FormData) {
     return { error: 'Invalid form data.' }
   }
 
-  const payload = {
+  const payload: TablesUpdate<'profiles'> = {
     display_name: displayName || null,
     country_code: countryCode || null,
-    updated_at: new Date().toISOString(),
   }
 
   const { error } = await supabase.from('profiles').update(payload).eq('id', user.id)
