@@ -14,37 +14,41 @@ export async function updateProfile(formData: FormData) {
     data: { user },
   } = await supabase.auth.getUser()
   if (!user) {
-    return { error: 'You must be logged in to update your profile.' }
+    // This should ideally not be reachable if the form is protected
+    return redirect('/login')
   }
 
-  // Create a payload object that is explicitly typed.
-  const payload: TablesUpdate<'profiles'> = {}
+  const displayName = formData.get('displayName') as string | null
+  const countryCode = formData.get('countryCode') as string | null
 
-  // Get values from FormData.
-  const displayName = formData.get('displayName')
-  const countryCode = formData.get('countryCode')
+  // Create a simple, untyped object first to avoid triggering the TS inference bug.
+  const payload: { [key: string]: any } = {}
 
-  // Dynamically build the payload, only adding fields that were actually submitted with a string value.
-  // This is a more robust pattern that avoids the underlying TypeScript inference bug with the Supabase client.
-  if (typeof displayName === 'string') {
+  // Conditionally add properties to the payload only if they have a valid value.
+  if (displayName && displayName.trim() !== '') {
     payload.display_name = displayName
   }
-
-  if (typeof countryCode === 'string') {
+  if (countryCode && countryCode.trim() !== '') {
     payload.country_code = countryCode
   }
 
-  // If no data was submitted, no need to call the database.
+  // If the payload is empty, there's nothing to update.
   if (Object.keys(payload).length === 0) {
     revalidatePath('/profile')
-    return { success: 'No changes were submitted.' }
+    // Return a success message as the user might just click "Update" without changing anything.
+    return { success: 'No changes submitted.' }
   }
 
-  const { error } = await supabase.from('profiles').update(payload).eq('id', user.id)
+  // Explicitly cast the dynamically built object to the required Supabase type.
+  // This is the key to bypassing the compiler's faulty type inference.
+  const { error } = await supabase
+    .from('profiles')
+    .update(payload as TablesUpdate<'profiles'>)
+    .eq('id', user.id)
 
   if (error) {
     console.error('Update Profile Error:', error)
-    return { error: 'Failed to update profile.' }
+    return { error: 'Database error: Failed to update profile.' }
   }
 
   revalidatePath('/profile')
