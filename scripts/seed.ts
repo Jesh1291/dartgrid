@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+import { createServiceRoleClient } from '@/lib/supabase';
 import { config } from 'dotenv';
 import { Database } from '@/types/supabase';
 
@@ -8,10 +8,7 @@ type PlayerInsert = Database['public']['Tables']['players']['Insert'];
 type MatchInsert = Database['public']['Tables']['matches']['Insert'];
 type OomInsert = Database['public']['Tables']['oom']['Insert'];
 
-const supabase = createClient<Database>(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+const supabase = createServiceRoleClient();
 
 async function seed() {
   console.log('🌱 Starting database seed...');

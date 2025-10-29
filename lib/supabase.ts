@@ -1,4 +1,3 @@
-
 import { createBrowserClient } from '@supabase/ssr'
 import { createServerClient as createSupabaseServerClient, type CookieOptions } from '@supabase/ssr'
 import { createClient as createSupabaseClient } from '@supabase/supabase-js'
