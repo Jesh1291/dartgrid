@@ -1,7 +1,7 @@
-
 'use client'
 
-import { useState } from 'react'
+// FIX: Import FormEvent to resolve 'Cannot find namespace 'React'' error for the event handler type.
+import { useState, FormEvent } from 'react'
 import { createClient } from '@/lib/supabase'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
@@ -11,7 +11,7 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState('')
 
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleLogin = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setMessage('');

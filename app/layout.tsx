@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+// FIX: Import ReactNode to resolve 'Cannot find namespace 'React'' error for the type annotation of 'children'.
+import type { ReactNode } from "react";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   // FIX: The cookies() function from next/headers is being incorrectly typed as returning a Promise. Awaiting it resolves the promise and provides the cookie store object.
   const cookieStore = await cookies();

@@ -1,4 +1,5 @@
-
+// FIX: Import React to resolve 'Cannot find namespace 'React'' error for React.ReactNode and JSX.
+import * as React from 'react';
 import { Database } from '@/types/supabase';
 import { Flame, Star, Target, XCircle, CheckCircle, PauseCircle, Zap } from 'lucide-react';
 

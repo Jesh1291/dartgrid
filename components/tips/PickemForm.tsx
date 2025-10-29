@@ -1,7 +1,7 @@
-
 "use client"
 
-import { useState } from 'react';
+// FIX: Import FormEvent to resolve 'Cannot find namespace 'React'' error for the event handler type.
+import { useState, FormEvent } from 'react';
 import { User } from '@supabase/supabase-js';
 import { Database } from '@/types/supabase';
 import { Button } from '@/components/ui/Button';
@@ -40,7 +40,7 @@ export function PickemForm({ match, user, translations }: PickemFormProps) {
   
   const isLocked = new Date() > new Date(match.lock_at);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!user || isLocked) return;
 

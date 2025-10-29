@@ -1,3 +1,6 @@
+// FIX: Added "use client" directive as this component uses the useTranslation hook, which relies on React's Context API.
+"use client";
+
 import { useTranslation } from "@/hooks/useTranslation";
 import { Heart } from "lucide-react";
 
