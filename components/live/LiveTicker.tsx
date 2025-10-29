@@ -77,6 +77,7 @@ export function LiveTicker({ initialMatch, translations }: LiveTickerProps) {
       </div>
 
       <div className="mt-6">
+        {/* FIX: Explicitly pass children to CollapsibleSection to resolve incorrect 'children' is missing error. */}
         <CollapsibleSection title={translations.moreDetails}>
             <div className="bg-background/50 p-4 rounded-md">
                 <h4 className="font-bold text-lg mb-2">{translations.legHistory}</h4>

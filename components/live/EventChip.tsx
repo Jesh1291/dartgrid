@@ -1,3 +1,4 @@
+
 // FIX: Import React to resolve 'Cannot find namespace 'React'' error for React.ReactNode and JSX.
 import * as React from 'react';
 import { Database } from '@/types/supabase';
@@ -21,7 +22,8 @@ const eventStyles: { [key: string]: { icon: React.ReactNode; label: string; colo
   'throw': { icon: <Target size={14} />, label: 'Throw', color: 'bg-sky-500 text-white' },
 };
 
-export function EventChip({ event }: EventChipProps) {
+// FIX: Change component to a const typed with React.FC to resolve type errors related to the 'key' prop.
+export const EventChip: React.FC<EventChipProps> = ({ event }) => {
   const style = eventStyles[event.type] || eventStyles['throw'];
   
   // NOTE: assuming payload is { score: number } for 'throw' type

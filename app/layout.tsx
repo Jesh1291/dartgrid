@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 // FIX: Import ReactNode to resolve 'Cannot find namespace 'React'' error for the type annotation of 'children'.
 import type { ReactNode } from "react";
@@ -52,11 +53,14 @@ export default async function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground">
         <I18nProvider dictionary={dictionary}>
-          <Header />
-          <main className="flex-grow container mx-auto px-4 py-8">
-            {children}
-          </main>
-          <Footer />
+          {/* FIX: Wrap children in a fragment to resolve incorrect 'children' is missing error. */}
+          <>
+            <Header />
+            <main className="flex-grow container mx-auto px-4 py-8">
+              {children}
+            </main>
+            <Footer />
+          </>
         </I18nProvider>
         <Analytics />
       </body>
